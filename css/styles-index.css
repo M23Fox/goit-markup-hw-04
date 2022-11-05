@@ -70,6 +70,7 @@ button {
 .header {
   display: flex;
   justify-content: center;
+  height: 90px;
 }
 
 .header-conteiner {
@@ -161,8 +162,8 @@ button {
 }
 
 .address-header .item{
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -171,7 +172,9 @@ button {
 .address-link:focus,
 .header-link:focus,
 .header-link:active,
-.current-link {
+.current-link,
+.client-link:hover,
+.client-link:active{
   color: var(--hover-color);
 }
 
@@ -407,30 +410,37 @@ button {
 /* Клієнти */
 
 .client-item{
-  min-width: 170px;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .client-list{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.client-item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 170px;
-  min-height: 92px;
-}
 
 .client-list .client-item +.client-item{
   margin-left: var(--margin-card);
 }
 
 .client-link{
-  padding: ;
+  color: #AFB1B8;
+  min-width: 170px;
+  min-height: 92px;
+  border: 1px solid;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+
+.client-icon{
+  fill: currentColor;
 }
 
 /* Футер */
@@ -440,7 +450,9 @@ button {
   color: #ffffff;
   padding-bottom: 60px;
   padding-top: 60px;
+  min-height: 252px;
 }
+
 .footer-logo {
   color: #ffffff;
 }
@@ -463,6 +475,41 @@ button {
 .address-link-footer .item + .item {
   margin-top: 9px;
 }
+
+.footer-conteiner{
+  display: flex;
+}
+
+.footer-conteiner .address +.address{
+  margin-left: 70px;
+}
+
+.social-title{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+}
+
+.footer-list{
+  min-width: 100px;
+}
+
+.footer-list .footer-social:last-child {
+  margin-right: -10px;
+}
+
+.footer-list{
+  padding: 0;
+}
+
+.footer-social-link{
+  background: rgba(255, 255, 255, 0.1);
+}
+
 /* portfolio */
 
 .portfolio-header {
@@ -495,8 +542,8 @@ button {
 .filter-button:hover {
   background-color: #2196f3;
   color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .projects-list {
